@@ -1,0 +1,28 @@
+#box {
+    height: 347px;
+    width: 931px;
+    margin: 50px auto;
+    background: turquoise;
+}
+.m_left {
+    width: 580px;
+    height: 347px;
+    background: #e4bae8;
+    float: left;
+}
+.m_left p {
+    width: 569px;
+    height: 19px;
+    padding: 25px 0 0 11px;
+    background: rebeccapurple;
+}
+.centre dl{
+    width: 580px;
+    height: 151px;
+    background: blue;
+}
+.centre dt  {
+
+}
+
+

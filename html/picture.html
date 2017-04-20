@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/picture.css">
+</head>
+<body>
+<div id="box">
+    <img src="../img/1.jpg" alt="">
+    <img src="../img/2.jpg" alt="">
+    <img src="../img/3.jpg" alt="">
+    <img src="../img/4.jpg" alt="">
+    <img src="../img/5.jpg" alt="">
+    <img src="../img/6.jpg" alt="">
+    <img src="../img/7.jpg" alt="">
+    <img src="../img/8.jpg" alt="">
+    <img src="../img/9.jpg" alt="">
+    <img src="../img/10.jpg" alt="">
+    <span id="left"><</span>
+    <span id="right">></span>
+</div>
+
+    <script>
+        var imgs = document.getElementById("box").getElementsByTagName("img"),
+            left = document.getElementById("left"),
+            right = document.getElementById("right");
+
+        var i = 0;
+        right.onclick = function () {
+            for (var j = 0; j < imgs.length; j++) {
+                imgs[j].style.display = "none "; //所有图片隐藏
+            }
+            i++ ;
+            if (i > imgs.length - 1 ) {
+                i = 0;
+            }
+            imgs[i].style.display = "block";
+        };
+
+        left.onclick = function () {
+            for (var j = 0; j < imgs.length; j++) {
+                imgs[j].style.display = "none "; //所有图片隐藏
+            }
+            i--;
+            if (i < 0) {
+                i = imgs.length - 1
+            }
+            imgs[i].style.display = "block";
+        }
+
+    </script>
+</body>
+</html>

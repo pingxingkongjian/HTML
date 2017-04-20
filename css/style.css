@@ -1,0 +1,44 @@
+#box {
+    width: 1500px;
+    height: 830px;
+    background: bisque;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#b2 {
+    width: 1500px;
+    height: 100px;
+    background: navy;
+}
+#c3 {
+    width: 1500px;
+    height: 50px;
+    background: yellowgreen;
+}
+#c4 {
+    width: 1500px;
+    height: 80px;
+    background: rebeccapurple;
+}
+#d5 {
+    width: 1500px;
+    height: 500px;
+    background: grey;
+}
+#left {
+    width: 1000px;
+    height: 500px;
+    background: royalblue;
+    float: left;
+}
+#right {
+    width: 500px;
+    height: 500px;
+    background: deepskyblue;
+}
+#e {
+    width: 1500px;
+    height: 100px;
+    background: green;
+}

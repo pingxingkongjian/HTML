@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#box {
+    width: 500px;
+    height: auto;
+    margin: 40px auto;
+    background: wheat;
+    overflow: hidden;
+    border: 2px solid black;
+}
+#box ul {
+    height: auto;
+    width: 500px;
+
+}
+#box ul li {
+    line-height: 40px;
+    width: 59px;
+    float: left;
+    border-right: 1px solid white;
+    background: royalblue;
+    padding: 0 53px;
+
+}
+#con {
+    padding: 20px ;
+}
+#con p {
+    display: none;
+    padding: 40px 30px;
+    margin: 40px;
+    border: 1px solid blue;
+}
+.b {
+    padding: 10px 0 0 20px;
+}

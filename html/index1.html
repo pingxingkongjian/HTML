@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/index1.css">
+</head>
+<body>
+    <div id="box">
+        <ul id="top">
+            <li>Tab1</li>
+            <li>Tab2</li>
+            <li>Tab3</li>
+        </ul>
+        <div id="con">
+            <p style="display: block">1I love you for my life past.Sometimes,you just have to pretend that you are happy just to stop everyone from asking you that the hell happened.有时候，你不得不假装很快乐，只是为了不让别人问"你怎么了?"
+                Nothing can't be figured out.The past just can't be reached again.
+                Someout exlept to say goodbye.
+                </p>
+            <p class="b">2I love you for my life past.Sometimes,you just have to pretend that you are happy just to stop everyone from asking you that the hell happened.有时候，你不得不假装很快乐，只是为了不让别人问"你怎么了?"
+                Nothing can't be figured out.The past just can't be reached again.
+                Sometimes there is no way out exlept to say goodbye.
+                1I love you for my life past.Sometimes,you just have to pretend that you are happy just to stop everyone from asking you that the hell happened.有时候，你不得不假装很快乐，只是为了不让别人问"你怎么了?"
+                Nothing can't be figured out.The past just can't be reached again.
+               .</p>
+            <p class="c">3I love you for my life past.Sometimes,you just have to pretend that you are happy just to stop everyone from asking you that the hell happened.有时候，你不得不假装很快乐，只是为了不让别人问"你怎么了?"
+                Nothing can't be figured out.The past just can't be reached again.
+                Sometimes there is no way out exlept to say goodbye.
+                1I love you for my life past.Sometimes,you just have to pretend that you are happy just to stop everyone from asking you that the hell happened.有时候，你不得不假装很快乐，只是为了不让别人问"你怎么了?"
+                Nothing can't be figured out.The past just can't be reached again.
+                1I love you for my life past.Sometimes,you just have to pretend that you are happy just to stop everyone from asking you that the hell happened.有时候，你不得不假装很快乐，只是为了不让别人问"你怎么了?"
+                Nothing can't be figured out.The past just can't be reached again.
+               </p>
+        </div>
+    </div>
+
+    <script>
+        var lis = document.getElementById("top").getElementsByTagName("li");
+        var cons = document.getElementById("con").getElementsByTagName("p");
+
+        for (var i =0; i <lis.length;i++ ) {
+            lis[i].index = i;
+            console.log(lis[i].index);
+            lis[i].onclick = function () {
+               for (var j = 0; j < cons.length; j ++) {
+                   cons[j].style.display = "none";
+                   lis[j].style.background = "";
+
+               }
+               cons[this.index].style.display = "block";
+                lis[this.index].style.background = "wheat";
+            }
+        }
+    </script>
+</body>
+</html>

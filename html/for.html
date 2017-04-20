@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <img src="../img/1.jpg" alt="">
+    <img src="../img/2.jpg" alt="">
+    <img src="../img/3.jpg" alt="">
+    <img src="../img/4.jpg" alt="">
+    <img src="../img/5.jpg" alt="">
+    <img src="../img/6.jpg" alt="">
+    <img src="../img/7.jpg" alt="">
+    <img src="../img/8.jpg" alt="">
+    <img src="../img/9.jpg" alt="">
+    <img src="../img/10.jpg" alt="">
+</div>
+<script>
+    var x;
+    var mycars = new Array();
+    mycars[0] = "Saab";
+    mycars[1] = "Volvo";
+    mycars[2] = "BMW";
+
+    for (x in mycars) {
+        document.write(mycars[x] + "<br />")
+    }
+
+    var imgs = document.getElementById("box").getElementsByTagName("img");
+
+    for(var i = 0 ; i < imgs.length; i++) {
+        console.log(imgs[i])
+    }
+</script>
+</body>
+</html>

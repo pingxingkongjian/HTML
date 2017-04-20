@@ -1,0 +1,39 @@
+#box {
+    width: 700px;
+    height: 320px;
+    border: 1px solid black;
+    margin: 40px auto;
+    overflow: hidden; //隐藏多出的部分
+}
+#box img {
+    width: 700px;
+    height: 320px;
+    float: left;
+}
+
+#left {
+    position: absolute;
+    left:420px;
+    top:155px;
+    width:50px;
+    height: 60px;
+    background: #ccc;
+    opacity: 0.5;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 36px;
+}
+#right {
+    position: absolute;
+    right:420px;
+    top:155px;
+    width:50px;
+    height: 60px;
+    background: #ccc;
+    opacity: 0.5;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 36px;
+}

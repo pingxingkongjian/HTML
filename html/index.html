@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div id="box">
+    <ul id="top">
+        <li>七言</li>
+        <li>绝句</li>
+        <li>李白</li>
+    </ul>
+    <div id="con">
+        <p>风萧萧兮易水寒，壮士一去兮不复还。探虎穴兮入蛟宫，仰天呼气兮成白虹。</p>
+        <p>枯藤老树昏鸦，小桥流水人家。夕阳西下，断肠人在天涯。</p>
+        <p>鹅鹅鹅，曲颈向天歌，白毛浮绿水，红掌拨清波。</p>
+    </div>
+</div>
+
+<script>
+    var lis = document.getElementById("top").getElementsByTagName("li"),//新闻 图片 游戏
+
+        con = document.getElementById("con").getElementsByTagName("p");//每段内容
+
+    //点击每个导航 让他出现所对应的内容
+    for(var i = 0; i < lis.length; i++) {
+        lis[i].index = i;
+        console.log(lis[i].index);
+        //循环出每个li 添加点击事件
+        lis[i].onclick = function () {
+            //让所有的p隐藏
+            for(var j = 0; j < con.length; j++) {
+                con[j].style.display = 'none';
+                lis[j].style.background = 'yellow';
+            }
+            con[this.index].style.display = 'block';//点击当前对象的索引
+            lis[this.index].style.background = "black";
+        }
+    }
+
+</script>
+</body>
+</html>

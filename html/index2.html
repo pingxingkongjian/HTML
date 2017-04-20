@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box {
+            width: 700px;
+            height: 400px;
+            margin: auto;
+        }
+        #con {
+            width: 700px;
+            height: 320px;
+            margin: 20px auto;
+
+        }
+        #box button {
+            margin-left: 160px;
+           width: 100px;
+            border: 1px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <p id="con"><img src="../img/7.jpg" alt=""></p>
+    <button id="btn1">开始</button>
+    <button id="btn2">暂停</button>
+
+    <script>
+
+//        var arr = ["大大",'倒萨','大个'];
+        var arr = ['<img src="../img/1.jpg"/>',
+            '<img src="../img/2.jpg"/>',
+            '<img src="../img/3.jpg"/>',
+            '<img src="../img/4.jpg"/>',
+            '<img src="../img/5.jpg"/>',
+            '<img src="../img/6.jpg"/>'];
+       var con = document.getElementById("con"),
+           btn1 = document.getElementById("btn1"),
+           btn2 = document.getElementById("btn2");
+
+       var i = 0;
+       function aa() {
+           con.innerHTML = arr[i];
+           i++;
+           if (i > arr.length - 1) {
+               i = 0;
+           }
+       }
+       btn1.onclick = function () {
+           btn1.disabled = "disabled";//禁止点击
+           s1 = setInterval(aa,100);
+       };
+       btn2.onclick = function () {
+           clearInterval(s1);
+           btn1.disabled = '';
+       }
+        </script>
+</div>
+</body>
+</html>
