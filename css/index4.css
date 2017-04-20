@@ -1,0 +1,23 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#box {
+    width: 700px;
+    height: 320px;
+    background: #000;
+    margin: 40px auto;
+    overflow: hidden;
+}
+#con {
+    width: 5600px;
+    height: 320px;
+
+}
+#con li {
+    width: 700px;
+    height: 320px;
+    float: left;
+
+}
