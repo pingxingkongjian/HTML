@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <link rel="stylesheet" href="../css/index5.css">
+</head>
+<body>
+<div id="box">
+    <ul id="img">
+        <li><img src="../img/1.jpg" alt=""></li>
+        <li><img src="../img/2.jpg" alt=""></li>
+        <li><img src="../img/3.jpg" alt=""></li>
+        <li><img src="../img/4.jpg" alt=""></li>
+        <li><img src="../img/5.jpg" alt=""></li>
+        <li><img src="../img/6.jpg" alt=""></li>
+        <li><img src="../img/7.jpg" alt=""></li>
+        <li><img src="../img/8.jpg" alt=""></li>
+        <li><img src="../img/9.jpg" alt=""></li>
+        <li><img src="../img/10.jpg" alt=""></li>
+    </ul>
+    <ol id="num">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <span id="left"> < </span>
+    <span id="right"> > </span>
+
+</div>
+<script>
+    var img = document.getElementById("img").getElementsByTagName("li"),
+        num = document.getElementById("num").getElementsByTagName("li"),
+        left =document.getElementById("left"),
+        right = document.getElementById("right");
+
+    //图片自动滚动。
+    var k = 0;
+    function aa() {
+        for (var i = 0; i <num.length; i++) {
+            img[i].style.display = "none"
+            num[i].style.background = "none"
+        }
+        img[k].style.display = "block";
+        num[k].style.background = "red";
+        k++;
+        if (k > num.length - 1) {
+            k = 0;
+        }
+    }
+    s1 = setInterval(aa,1000);
+
+    for (var i = 0; i < num.length; i++) {
+        num[i].index = i;
+        num[i].onmouseover =function () {
+            clearInterval(s1);
+           for (var j = 0; j <img.length;j++) {
+               img[j].style.display = "none";
+               num[j].style.background = "none";
+           }
+           img[this.index].style.display = "block";
+           num[this.index].style.background = "red";
+        }
+    num[i].onmouseout = function () {
+        K = this.index;
+        s1 = setInterval(aa,1000)
+        }
+    }
+    //点击左右按钮切换图片
+//    var i = 0;
+//    right.onclick = function () {
+//        for (var j = 0; j < img.length; j++) {
+//            img[j].style.display = "none";
+//        }
+//        i++;
+//        if (i > img.length - 1) {
+//            i = 0;
+//        }
+//        img[i].style.display = "block";
+//    }
+//    left.onclick = function () {
+//        for (var j = 0; j < img.length; j ++) {
+//            img[j].style.display = "none";
+//        }
+//        i--;
+//        if (i<0) {
+//            i=img.length-1;
+//        }
+//        img[i].style.display = "block";
+//    }
+
+</script>
+</body>
+</html>
