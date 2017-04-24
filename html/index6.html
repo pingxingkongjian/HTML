@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/index6.css">
+</head>
+<body>
+<div id="box">
+    <ul >
+        <li><img src="../img/1.jpg" alt=""><p>床前明月光</p></li>
+        <li><img src="../img/2.jpg" alt=""><p>床前明月光</p></li>
+        <li><img src="../img/3.jpg" alt=""><p>床前明月光</p></li>
+        <li><img src="../img/4.jpg" alt=""><p>床前明月光</p></li>
+        <li><img src="../img/5.jpg" alt=""><p>床前明月光</p></li>
+        <li><img src="../img/6.jpg" alt=""><p>床前明月光</p></li>
+        <li><img src="../img/7.jpg" alt=""><p>床前明月光</p></li>
+        <li><img src="../img/8.jpg" alt=""><p>床前明月光</p></li>
+        <li><img src="../img/9.jpg" alt=""><p>床前明月光</p></li>
+        <li><img src="../img/10.jpg" alt=""><p>床前明月光</p></li>
+    </ul>
+</div>
+
+<script>
+    var lis = document.getElementsByTagName("ul")[0].getElementsByTagName("li");
+
+    for (var i = 0; i <lis.length; i++) {
+        lis[i].onmouseover = function () {
+            this.style.border = '2px solid red';
+            this.getElementsByTagName("p")[0].style.display = "block";
+            this.getElementsByTagName("p")[0].style.color = "red";
+            this.lis[0].style.display = "block";
+        };
+        lis[i].onmouseout = function () {
+            this.style.border = '2px solid #ccc';
+            this.getElementsByTagName("p")[0].style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
