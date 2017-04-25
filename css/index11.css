@@ -1,0 +1,40 @@
+* {
+    margin: 0;padding: 0;list-style: none;
+}
+#box {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background: red;
+    /*opacity: 0.5;*/
+    border: 5px solid black;
+    margin: 150px auto;
+    text-align: center;
+    line-height: 190px;
+    font-size: 150px;
+    font-family:华文新魏;
+    /*-webkit-transform: rotate(0deg) skew(0deg) scale(1) rotateX(0deg);*/
+    -webkit-transform: rotate(45deg) ;
+    -webkit-transition: all 1s;
+}
+#box:hover {
+    width: 500px;
+    height: 500px;
+    /*border-radius: 250px;*/
+    background: red;
+    opacity: 1;
+    border: 10px solid black;
+    line-height: 481px;
+    text-align: center;
+    font-size: 380px;
+    -webkit-transform: rotate(405deg);
+    /*-webkit-transform: rotate(600deg) skew(75deg) scale(2) rotateY(130deg) ;*/
+}
+#box h3 {
+    -webkit-transform: rotate(135deg) ;
+    -webkit-transition: all 1s;
+}
+#box:hover h3 {
+    -webkit-transform: rotate(678deg) ;
+    -webkit-transition: all 1s;
+}
