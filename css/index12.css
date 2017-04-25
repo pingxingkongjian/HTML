@@ -1,0 +1,40 @@
+* {
+    margin:0;padding: 0;list-style: none;
+}
+#box {
+    width: 168px;
+    height: 42px;
+    margin: 100px auto;
+}
+#box a {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url("../img/icons.png");
+    -webkit-transition: all 300ms;
+}
+#box a:nth-child(1) {
+     background-position: 0 0 ;
+ }
+#box a:nth-child(2) {
+    background-position: -42px 0 ;
+}
+#box a:nth-child(3) {
+    background-position: -84px 0 ;
+}
+#box a:nth-child(4) {
+    background-position: -126px 0 ;
+}
+
+#box a:nth-child(1):hover {
+    background-position: 0 -42px ;
+}
+#box a:nth-child(2):hover {
+    background-position: -42px -84px ;
+}
+#box a:nth-child(3):hover {
+    background-position: -84px -126px ;
+}
+#box a:nth-child(4):hover {
+    background-position:  -126px -168px ;
+}
