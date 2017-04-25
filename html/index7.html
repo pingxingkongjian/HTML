@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index7.css">
+</head>
+<body>
+<div id="box">
+    <p><img src="../img/toptitle.png" alt=""></p>
+    <h3>苹果 IPhone 6 Plus <img src="../img/tea1.jpg" alt=""></h3>
+    <dl style='display:block'>
+        <dt><img src="../img/shouji_buttom1.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>是看放人有好就他有据个有图就</p>
+        </dd>
+    </dl>
+
+    <h3>苹果 IPhone 6 Plus <img src="../img/tea2.jpg" alt=""></h3>
+    <dl>
+        <dt><img src="../img/shouji_buttom2.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>是看放人有好就他有据个有图就</p>
+        </dd>
+    </dl>
+
+    <h3>苹果 IPhone 6 Plus <img src="../img/tea3.jpg" alt=""></h3>
+    <dl>
+        <dt><img src="../img/shouji_buttom3.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>是看放人有好就他有据个有图就</p>
+        </dd>
+    </dl>
+
+    <h3>苹果 IPhone 6 Plus <img src="../img/tea4.jpg" alt=""></h3>
+    <dl>
+        <dt><img src="../img/shouji_buttom4.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>是看放人有好就他有据个有图就</p>
+        </dd>
+    </dl>
+
+    <h3>苹果 IPhone 6 Plus <img src="../img/tea5.jpg" alt=""></h3>
+    <dl>
+        <dt><img src="../img/shouji_buttom5.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>是看放人有好就他有据个有图就</p>
+        </dd>
+    </dl>
+</div>
+<script src='../Jq/jquery-1.7.2.js'></script>
+<script>
+
+    $('h3').click(function(){
+        $('h3').next().hide();
+        $(this).next().show('height:146px');
+        $(this).next().slideDown('');
+//        $(this).next().slideUp('height:146px');
+//        $(this).next().slideToggle('');
+    })
+</script>
+</body>
+</html>

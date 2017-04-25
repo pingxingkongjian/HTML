@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#box {
+    width: 3500px;
+    height: 320px;
+    /*margin: 100px auto;*/
+    position: absolute;
+    -webkit-animation:a 10s linear 1s infinite alternate;
+    /* 速度曲线:匀速         linear
+             由慢到快再到慢 ease;
+             由慢开始     ease-in
+             由慢结束    ease-out
+             由慢开始由慢结束 ease-in-out
+    播放次数:n infinite;
+    动画的方向:normal alternate倒序; */
+
+}
+@-webkit-keyframes a {
+    0%{
+        left: 0;
+    }
+    25%{
+        left: -700px;
+    }
+    50%{
+        left: -1400px;
+    }
+    75%{
+        left: -2100px;
+    }
+    100%{
+        left: -2800px;
+    }
+}

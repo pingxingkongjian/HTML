@@ -1,0 +1,54 @@
+.box {
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    background: red;
+}
+.box1 {
+    width: 200px;
+    height: 50px;
+    background: black;
+    margin:0 auto;
+}
+.box2 {
+    width: 200px;
+    height: 50px;
+    background: yellow;
+    margin: 10px auto  ;
+}
+.box3 {
+    width: 200px;
+    height: 50px;
+    background: blue;
+    margin: 10px auto;
+}
+.box4 {
+    width: 200px;
+    height: 50px;
+    background: firebrick;
+    margin: 10px auto;
+}
+.box5 {
+    width: 200px;
+    height: 50px;
+    background: teal;
+    margin: 10px auto;
+}
+.box6 {
+    width: 200px;
+    height: 50px;
+    background:fuchsia;
+    margin: 10px auto;
+}
+.box7 {
+    width: 200px;
+    height: 50px;
+    background: skyblue;
+    margin: 10px auto;
+}
+.box8 {
+    width: 200px;
+    height: 50px;
+    background: green;
+    margin: 10px auto;
+}
