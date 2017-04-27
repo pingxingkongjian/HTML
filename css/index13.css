@@ -10,15 +10,66 @@
 #radioBox input{
     position: absolute;
     opacity: 0;
+
 }
 #radioBox label{
     width: 77px;
     height:27px;
     border-radius: 15px;
     display: block;
-    background:url(../img/QQ.png);
+    background:url('../img/QQ.png');
     -webkit-transition:all 1s;
 }
 #radioBox input:checked+label{
     background-position:-51px 0;
+}
+
+/*#checkBox1{*/
+    /*width:50px;*/
+    /*height: 30px;*/
+    /*position: relative;*/
+    /*margin: 0 auto;*/
+/*}*/
+/*#checkBox1 input{*/
+    /*position: absolute;*/
+    /*opacity: 0;*/
+/*}*/
+/*#checkBox1 label{*/
+    /*width: 50px;*/
+    /*height:30px;*/
+    /*display: block;*/
+    /*background: url('../img/QQ图片20170426143456.png');*/
+    /*background-size:100%;*/
+    /*-webkit-transition:all 1s;*/
+/*}*/
+/*#checkBox1 input:checked+label{*/
+    /*background: url('../img/QQ图片20170426143504.png');*/
+    /*background-size: 100%;*/
+/*}*/
+
+#moreChecked {
+    width: 300px;
+    height: 25px;
+    /*background: #f5f5f5;*/
+    margin: 40px auto;
+}
+#moreChecked li {
+    float: left;
+    position: relative;
+}
+#moreChecked li input {
+    position: absolute;
+    display: none;
+
+}
+#moreChecked li label {
+    width: 25px;
+    height: 25px;
+    display: block;
+    line-height: 25px;
+    padding-left: 30px;
+    background: url("../img/1.qq.png") no-repeat 0 -75px;
+}
+#moreChecked li input:checked+label {
+    background-position: 0 -100px ;
 }

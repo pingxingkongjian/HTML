@@ -1,0 +1,29 @@
+* {
+    margin: 0;padding: 0;list-style: none;
+}
+#box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-top: 40px;
+    -webkit-animation:a  2s linear 1s infinite ;
+    /*-webkit-transform:translateX(400px) translateY(330px) translateX(-400px) translateY(-300px);*/
+
+}
+@-webkit-keyframes a {
+    0%{
+       -webkit-transform: translate(0);
+    }
+    25%{
+        -webkit-transform: translateX(400px);
+    }
+    50%{
+        -webkit-transform: translate(400px, 300px);
+    }
+    75%{
+        -webkit-transform: translateY(300px);
+    }
+    100%{
+        -webkit-transform: translate(0);
+    }
+}

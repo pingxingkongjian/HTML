@@ -1,0 +1,87 @@
+* {
+    margin: 0;padding: 0;list-style: none;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    float: left;
+    /*background: springgreen;*/
+    /*margin: 40px auto;*/
+    position: relative;
+    -webkit-animation: a 1s linear  infinite;
+    /*-webkit-transform: rotate(0deg);*/
+    /*-webkit-transition: all 1s;*/
+}
+/*#box:hover {*/
+    /*-webkit-transform: rotate(360deg);*/
+/*}*/
+.box>div {
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    left: 80px;
+    -webkit-transform-origin: center bottom;
+}
+.a {
+    /*background: red;*/
+    -webkit-transform: rotateZ(90deg);
+}
+.a div {
+    background: red;
+}
+.b {
+    /*background: blue;*/
+    -webkit-transform: rotateZ(180deg);
+}
+.b div {
+    background: blue;
+}
+.c {
+    /*background: black;*/
+    -webkit-transform: rotateZ(270deg);
+}
+.c div {
+    background: yellow;
+}
+.d {
+    /*background: yellow;*/
+    /*-webkit-transform: rotateZ(90deg);*/
+}
+.d div {
+    background: black;
+}
+.a1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.a2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+.a3 {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    margin: 0 auto;
+    opacity: 0.6;
+}
+.a4 {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin: 0 auto;
+    opacity: 0.4;
+}
+@-webkit-keyframes a {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+
+}

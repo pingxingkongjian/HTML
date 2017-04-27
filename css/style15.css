@@ -1,0 +1,20 @@
+* {
+    margin: 0;padding: 0;list-style: none;
+}
+#box {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    margin: 40px auto;
+    border: 1px solid black;
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition: all 1s;
+}
+#box:hover {
+    width: 500px;
+    height: 500px;
+    background: red;
+    border-radius: 250px;
+    border: 10px solid yellow;
+    -webkit-transform: rotate(700deg) scale(2);
+}
