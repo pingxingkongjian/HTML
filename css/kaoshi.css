@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#box {
+    width: 4920px;
+    height: 461px;
+    margin: 40px auto;
+    float: left;
+    -webkit-animation: mycss 5s linear 1s infinite ;
+}
+@-webkit-keyframes mycss {
+    0%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: -1230px;
+    }
+    50%{
+        margin-left:-2460px;
+    }
+    75%{
+        margin-left:-3690px;
+    }
+    100%{
+        margin-left:-4920px;
+    }
+}

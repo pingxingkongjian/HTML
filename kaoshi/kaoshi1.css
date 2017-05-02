@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#box{
+    box-shadow:30px 30px 30px ;
+    width: 820px;
+    height: 461px;
+    margin: 80px auto;
+    overflow: hidden;
+    border: 5px solid peru;
+    border-radius: 20px;
+}
+
+#con{
+    width: 4920px;
+    height: 461px;
+    -webkit-animation: mycss 5s linear 1s infinite alternate;
+}
+#con li{
+    float: right;
+}
+@-webkit-keyframes mycss {
+    0%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: -1025px;
+    }
+    50%{
+        margin-left:-2050px;
+    }
+    75%{
+        margin-left:-3075px;
+    }
+    100%{
+        margin-left:-4100px;
+    }
+}

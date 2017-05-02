@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/kaishi2.css">
+</head>
+<body>
+<div id="box">
+    <ul id="img">
+        <li><img src="../img/1.jpg" alt=""></li>
+        <li><img src="../img/2.jpg" alt=""></li>
+        <li><img src="../img/3.jpg" alt=""></li>
+        <li><img src="../img/4.jpg" alt=""></li>
+        <li><img src="../img/5.jpg" alt=""></li>
+        <li><img src="../img/6.jpg" alt=""></li>
+    </ul>
+    <ol id="num">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</div>
+<script>
+    var img = document.getElementById("img").getElementsByTagName("li"),
+        num = document.getElementById("num").getElementsByTagName("li");
+
+    var j = 0;
+    function aa() {
+    for (var i = 0; i < img.length; i++) {
+        img[i].style.display = "none";
+        num[i].style.background = "#ccc";
+    }
+        img[j].style.display = "block";
+        num[j].style.background = "red";
+        j++;
+        if (j > num.length - 1) {
+            j = 0;
+        }
+    }
+    s = setInterval(aa,1000);
+
+    for (var i = 0; i < num.length; i++) {
+        num[i].index = i;
+        num[i].onmouseover =function () {
+            clearInterval(s);
+            for (var j = 0; j <img.length;j++) {
+                img[j].style.display = "none";
+                num[j].style.background = "#ccc ";
+            }
+            img[this.index].style.display = "block";
+            num[this.index].style.background = "red";
+        };
+        num[i].onmouseout = function () {
+            j = this.index;
+            s = setInterval(aa,1000)
+        }
+    }
+</script>
+</body>
+</html>
